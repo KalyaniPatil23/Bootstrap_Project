@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Cakes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid" style="margin-left: 20px;">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"
+                    style="width: 120px; height: 50px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse custom-navbar-container" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html" style="color: #f04fa4 !important;">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <p style="margin-top: 8px; margin-bottom: 0;">Mumbai</p>
+                        <!-- <a class="nav-link" href="about.html">About</a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Slidre-->
+    <div class="fluid-container">
+        <div id="carouselExample" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-inner" style="height: 400px;">
+                <div class="carousel-item active">
+                    <img src="images/product-slider13.avif" class="d-block w-100" alt="New Year Cake" style="height: 400px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/product-slider11.avif" class="d-block w-100" alt="Birthday Cake" style="height: 400px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/product-slider12.png" class="d-block w-100" alt="Anniversary Cake" style="height: 400px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/product-slider4.webp" class="d-block w-100" alt="Anniversary Cake" style="height: 400px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/product-slider5.jpg" class="d-block w-100" alt="Anniversary Cake" style="height: 400px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Shop near you-->
+    <div class="fluid-container shop-cake-class" style="margin-bottom: 0;">
+        <h2 style="font-weight: 600;">Shop near you</h2>
+        <div class="row" style="margin-top: 32px;">
+            <div class="col-3 text-center">
+                <div class="card">
+                    <img src="images/shop.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 id="shop1" class="card-title shop-card-title mt-4">M Ali & Sons (Kurla - West)</h5>
+                      <h6 class="text-start" style="color: rgba(0, 0, 0, 0.6);">Cakes, Desserts, Sweets</h6>
+                      <a href="shop.html" class="btn btn-light" style="margin-top: 26px; width: 70%;" onclick="shareShop('M Ali & Sons (Kurla - West)')">View Shop</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3 text-center">
+                <div class="card">
+                    <img src="images/shop.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title shop-card-title mt-4">ASHTAVINAYAK GEN STORE</h5>
+                      <h6 class="text-start" style="color: rgba(0, 0, 0, 0.6);">Cakes, Desserts, Sweets</h6>
+                      <a href="shop.html" class="btn btn-light" style="margin-top: 26px; width: 70%;" onclick="shareShop('ASHTAVINAYAK GEN STORE')">View Shop</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3 text-center">
+                <div class="card">
+                    <img src="images/shop.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title shop-card-title mt-4">CELEBRATIONS (CHUNABHATTI-EAST)</h5>
+                      <h6 class="text-start" style="color: rgba(0, 0, 0, 0.6);">Cakes, Desserts, Sweets</h6>
+                      <a href="shop.html" class="btn btn-light" style="margin-top: 26px; width: 70%;" onclick="shareShop('CELEBRATIONS (CHUNABHATTI-EAST)')">View Shop</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3 text-center">
+                <div class="card">
+                    <img src="images/shop.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title shop-card-title mt-4">Om Sai Foods (Ghatkopar-West)</h5>
+                      <h6 class="text-start" style="color: rgba(0, 0, 0, 0.6);">Cakes, Desserts, Sweets</h6>
+                      <a href="shop.html" class="btn btn-light" style="margin-top: 26px; width: 70%;" onclick="shareShop('Om Sai Foods (Ghatkopar-West)')">View Shop</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!--New Arrivals-->
+    <div class="fluid-container shop-cake-class" style="margin-bottom: 0;">
+        <h2 style="font-weight: 600;">New Arrivals</h2>
+        <div class="row mt-4">
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/new1.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Chicken Barbeque Roll</h5>
+                      <h5 class="text-start" style="color: #f04fa4">57.00 Rs.</h5>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/new2.webp" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Pista Garden</h5>
+                      <h6 class="text-start" style="color: #f04fa4">950.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/new3.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title shop-card-title mt-4">Black Sauce & Flakes</h5>
+                      <h6 class="text-start" style="color: #f04fa4;">1150.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/new4.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Choco Fiesta Tall N Fancy</h5>
+                      <h6 class="text-start" style="color: #f04fa4">1550.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/new5.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Cherry Blossom</h5>
+                      <h6 class="text-start" style="color: #f04fa4">1550.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/new6.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Honeycomb Fancy</h5>
+                      <h6 class="text-start" style="color: #f04fa4">1550.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/new7.webp" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title shop-card-title mt-4">Exotic Choco Bite</h5>
+                      <h6 class="text-start" style="color: #f04fa4;">875.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/new8.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Exotic Choco Overloaded</h5>
+                      <h6 class="text-start" style="color: #f04fa4">950.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/new9.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title shop-card-title mt-4">Heart Glaze</h5>
+                      <h6 class="text-start" style="color: #f04fa4;">1550.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/new10.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Special Designer</h5>
+                      <h6 class="text-start" style="color: #f04fa4">1375.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/new11.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Royal Beauty</h5>
+                      <h6 class="text-start" style="color: #f04fa4">950.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/new12.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Exotic Butterscotch Cake</h5>
+                      <h6 class="text-start" style="color: #f04fa4">850.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+        </div>
+       </div>
+
+    <!--Our Categories-->
+    <div class="fluid-container shop-cake-class" style="margin-top: 0;">
+        <h2 style="font-weight: 600;">Our Categories</h2>
+        <p style="margin-bottom: 15px; font-size: 18px;">Choose from wide range</p>
+        <div class="row">
+            <div class="col-5">
+                <img src="images/cake9.jpg" alt="3D Cake & Special Ocassion Cakes" class="categories-cake" style="width: 100%; height: 400px; border-radius: 5px;">
+            </div>
+            <div class="col-7">
+                
+                <div class="row" style="padding-bottom: 10px; height: 190px;">
+                    <div class="col-6">
+                        <img src="images/cake10.jpg" class="categories-cake" alt="3D Cake & Special Ocassion Cakes">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/cake5.jpg" class="categories-cake" alt="3D Cake & Special Ocassion Cakes">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/cake6.jpg" class="categories-cake" alt="3D Cake & Special Ocassion Cakes">
+                    </div>
+                </div>
+                <div class="row" style="padding-top: 10px; height: 190px;">
+                    <div class="col-6">
+                        <img src="images/cake11.jpeg" class="categories-cake" alt="3D Cake & Special Ocassion Cakes" style="height: 200px;">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/cake7.jpg" class="categories-cake" alt="3D Cake & Special Ocassion Cakes" style="height: 200px;">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/cake8.jpg" class="categories-cake" alt="3D Cake & Special Ocassion Cakes" style="height: 200px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fluid-container shop-cake-class" style="margin-bottom: 0;">
+        <h2 style="font-weight: 600;">Our Best Sellers</h2>
+        <div class="row mt-4">
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/seller1.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Super Choco Tall n Fancy</h5>
+                      <h5 class="text-start" style="color: #f04fa4">1550.00 Rs.</h5>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/seller2.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Black Beauty Cake</h5>
+                      <h6 class="text-start" style="color: #f04fa4">1550.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/seller3.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title shop-card-title mt-4">Designer Pineapple Cake</h5>
+                      <h6 class="text-start" style="color: #f04fa4;">1150.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/seller4.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Designer Rasmalai Cake</h5>
+                      <h6 class="text-start" style="color: #f04fa4">1150.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/seller5.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Red Heart Pinata Cake</h5>
+                      <h6 class="text-start" style="color: #f04fa4">1550.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/seller6.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Exotic Butterscotch Cake</h5>
+                      <h6 class="text-start" style="color: #f04fa4">950.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/seller7.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title shop-card-title mt-4">Exotic Dutch Chocolate Cake</h5>
+                      <h6 class="text-start" style="color: #f04fa4;">950.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/seller8.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Premium Pineapple Cake</h5>
+                      <h6 class="text-start" style="color: #f04fa4">750.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/seller9.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title shop-card-title mt-4">Premium Blackforest Cake</h5>
+                      <h6 class="text-start" style="color: #f04fa4;">850.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/seller10.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Special Designer Chocoball Cake</h5>
+                      <h6 class="text-start" style="color: #f04fa4">687.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/seller11.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Special Designer Gulab Jamun Heart</h5>
+                      <h6 class="text-start" style="color: #f04fa4">680.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="height: 350px;">
+                    <img src="images/seller12.jpg" class="card-img-top" alt="..." height="200">
+                    <div class="card-body">
+                      <h5 class="card-title mt-4">Special Designer Blueberry Cheese Round Cake</h5>
+                      <h6 class="text-start" style="color: #f04fa4">850.00 Rs.</h6>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="fluid-container" style="padding: 20px; background-color: #20134B; color: white;">
+                <img src="images/logo1.png" alt="logo" width="275px" height="60px" class="m-4">
+        <div class="row mt-4">
+            <div class="col-3">
+                <ul>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>Become Franchise</li>
+                    <li>Become Vendor</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul>
+                    <li>Cakes</li>
+                    <li>3D & Sp Cakes</li>
+                    <li>Pastries</li>
+                    <li>Savouries</li>
+                    <li>Chocolates</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul>
+                    <li><i class="bi bi-facebook"></i> Facebook</li>
+                    <li><i class="bi bi-instagram"></i> Instagram</li>
+                    <li><i class="bi bi-twitter"></i> Twitter</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul>
+                    <li>Refund Policy</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!--Script Fuctions-->
+    <script>
+        const shareShop = (element) =>{
+            localStorage.setItem('shopName', element)
+        }
+    </script>
+    <!--Bootstrap scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
